@@ -19,7 +19,10 @@
   },
   "suffix": ".res.mjs",
   "bs-dependencies": [
-    "@rescript/core"
+    "@rescript/core",
+    "@rescript/react",
+    "@glennsl/rescript-fetch",
+    "@zooshme/rescript-json"
   ],
   "bsc-flags": [
     "-open RescriptCore"

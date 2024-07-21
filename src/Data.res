@@ -1,4 +1,4 @@
-type data<'a> =
+type t<'a> =
   | NotAsked
   | Loading
   | Data('a)
@@ -9,28 +9,28 @@ let make = () => NotAsked
 //#region
 
 //#region Checkers
-let isNotAsked = (data: data<'a>) => {
+let isNotAsked = (data: t<'a>) => {
   switch data {
   | NotAsked => true
   | _ => false
   }
 }
 
-let isLoading = (data: data<'a>) => {
+let isLoading = (data: t<'a>) => {
   switch data {
   | Loading => true
   | _ => false
   }
 }
 
-let isData = (data: data<'a>) => {
+let isData = (data: t<'a>) => {
   switch data {
   | Data(_) => true
   | _ => false
   }
 }
 
-let isError = (data: data<'a>) => {
+let isError = (data: t<'a>) => {
   switch data {
   | Error(_) => true
   | _ => false
@@ -39,7 +39,7 @@ let isError = (data: data<'a>) => {
 //#region
 
 //#region Transformers
-let toData = (data: data<'a>): option<'a> => {
+let toData = (data: t<'a>): option<'a> => {
   switch data {
   | Data(value) => Some(value)
   | _ => None
