@@ -19,6 +19,7 @@ let useRequest = (
   let controller = AbortController.make()
   let timeoutId = setTimeout(() => {
     controller->AbortController.abort("Request timed out")
+    setData(_ => Data.Error("Request timed out"))
   }, timeout)
 
   let options: Request.init = {

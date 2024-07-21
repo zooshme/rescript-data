@@ -15,6 +15,12 @@ function useRequest(endpoint, headers, credentials, method, timeoutOpt, body, de
   var controller = new AbortController();
   var timeoutId = setTimeout((function () {
           controller.abort("Request timed out");
+          setData(function (param) {
+                return {
+                        TAG: "Error",
+                        _0: "Request timed out"
+                      };
+              });
         }), timeout);
   var options = method === "GET" ? ({
         method: method,
