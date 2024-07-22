@@ -1,6 +1,6 @@
 {
   "name": "@zooshme/rescript-data",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "res:build": "./node_modules/.bin/rescript",
     "res:dev": "./node_modules/.bin/rescript build -w"
