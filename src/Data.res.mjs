@@ -6,6 +6,22 @@ function make() {
   return "NotAsked";
 }
 
+function getData(data) {
+  if (typeof data !== "object" || data.TAG !== "Data") {
+    return ;
+  } else {
+    return Caml_option.some(data._0);
+  }
+}
+
+function getError(data) {
+  if (typeof data !== "object" || data.TAG !== "Error") {
+    return ;
+  } else {
+    return data._0;
+  }
+}
+
 function isNotAsked(data) {
   if (typeof data !== "object" && data === "NotAsked") {
     return true;
@@ -38,6 +54,28 @@ function isError(data) {
   }
 }
 
+function update(data, f) {
+  if (typeof data !== "object" || data.TAG !== "Data") {
+    return data;
+  } else {
+    return {
+            TAG: "Data",
+            _0: f(data._0)
+          };
+  }
+}
+
+function map(data, f) {
+  if (typeof data !== "object" || data.TAG !== "Data") {
+    return data;
+  } else {
+    return {
+            TAG: "Data",
+            _0: f(data._0)
+          };
+  }
+}
+
 function toData(data) {
   if (typeof data !== "object" || data.TAG !== "Data") {
     return ;
@@ -48,10 +86,14 @@ function toData(data) {
 
 export {
   make ,
+  getData ,
+  getError ,
   isNotAsked ,
   isLoading ,
   isData ,
   isError ,
+  update ,
+  map ,
   toData ,
 }
 /* No side effect */
