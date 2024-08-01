@@ -1,15 +1,17 @@
 {
   "name": "@zooshme/rescript-data",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
-    "res:build": "./node_modules/.bin/rescript",
-    "res:dev": "./node_modules/.bin/rescript build -w"
+    "res:build": "rescript",
+    "res:dev": "rescript build -w",
+    "res:clean": "rescript clean"
   },
   "dependencies": {
     "@glennsl/rescript-fetch": "^0.2.0",
     "@rescript/core": "^1.5.2",
     "@rescript/react": "^0.12.2",
     "@zooshme/rescript-json": "^0.0.7",
-    "rescript": "^11.1.2"
-  }
+    "rescript": "^11.1.3"
+  },
+  "type": "module"
 }
