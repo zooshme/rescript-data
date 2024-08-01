@@ -46,7 +46,7 @@ let useRequest = (
       setData(_ => Data.Loading)
 
       let timeoutId = setTimeout(() => {
-        controller->AbortController.abort("Request timed out")
+        controller->AbortController.abort(~reason="Request timed out")
         setData(_ => Data.Error("Request timed out"))
       }, timeout)
 

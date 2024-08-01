@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@glennsl/rescript-fetch':
-    specifier: ^0.2.0
-    version: registry.npmjs.org/@glennsl/rescript-fetch@0.2.0
+    specifier: ^0.2.1
+    version: registry.npmjs.org/@glennsl/rescript-fetch@0.2.1
   '@rescript/core':
     specifier: ^1.5.2
     version: registry.npmjs.org/@rescript/core@1.5.2(rescript@11.1.3)
@@ -30,10 +30,10 @@ packages:
       rescript: registry.npmjs.org/rescript@11.1.3
     dev: false
 
-  registry.npmjs.org/@glennsl/rescript-fetch@0.2.0:
-    resolution: {integrity: sha512-0tsEqJ/6/WBm02prM4RYG+qpnNTaB8QKKIeQHXdDaE4C5YfA/nzjxMNW3CjsGIaEgyrAmmIXFS0kx24UjvOI6A==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@glennsl/rescript-fetch/-/rescript-fetch-0.2.0.tgz}
+  registry.npmjs.org/@glennsl/rescript-fetch@0.2.1:
+    resolution: {integrity: sha512-zKexXADVS8tiQrnEPVpE07nSQGragb9dE4NnZiZCfL5wdGbubkAks0zSbiiV4ai1cfKY/ynf+xCQ4wt/eVmE/A==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@glennsl/rescript-fetch/-/rescript-fetch-0.2.1.tgz}
     name: '@glennsl/rescript-fetch'
-    version: 0.2.0
+    version: 0.2.1
     dev: false
 
   registry.npmjs.org/@rescript/core@1.5.2(rescript@11.1.3):

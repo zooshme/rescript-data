@@ -1,13 +1,13 @@
 {
   "name": "@zooshme/rescript-data",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "scripts": {
     "res:build": "rescript",
     "res:dev": "rescript build -w",
     "res:clean": "rescript clean"
   },
   "dependencies": {
-    "@glennsl/rescript-fetch": "^0.2.0",
+    "@glennsl/rescript-fetch": "^0.2.1",
     "@rescript/core": "^1.5.2",
     "@rescript/react": "^0.12.2",
     "@zooshme/rescript-json": "^0.0.7",
